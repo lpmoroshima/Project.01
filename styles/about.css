@@ -1,0 +1,136 @@
+/*ABOUT ME*/
+.about{
+    padding: 4em 1.5em;
+    line-height: 1.3;    
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 6em;
+}
+.about__topo{
+    display: flex;
+    justify-content: center;    
+    align-items: center;  
+    gap: 1em;  
+    margin-bottom: 2em;
+}
+.about__titulo{
+    font-size: 20px;
+    margin: 0 0 0.8em 0;
+    color: var(--cor-secundaria);
+}
+.destaques__barra{
+    width: auto;
+    height: 1px;
+    background-color: var(--cor-primaria);
+    opacity: 20%;
+    align-items: center;  
+    flex-grow: 1;    
+}
+.about__titulo-destaque{
+    color: var(--cor-terciaria);
+    font-size: 20px;
+}
+.about__texto{
+    margin-bottom: 1em;
+}
+.about__segunda-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+}
+.about-foto{
+    border-radius: 10px;
+    width: 70%;    
+    border: 1px solid var(--cor-terciaria); 
+}
+.about__programas{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 50px;
+    list-style: none; 
+    margin: 2em 0;
+}
+.about__programas-lista{    
+    position: relative;
+    margin: 5px 0;
+    font-size: 13px;    
+    font-family: var(--fonte-terciaria);
+    font-weight: 300;
+}
+
+.about__programas-lista::before{
+    content: '\2771';
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0 10px 0 0;
+    color: var(--cor-terciaria);
+}
+.about__botao{
+    font-family: var(--fonte-terciaria);    
+    text-decoration: none;      
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    
+}
+.about__link__botao{
+    text-decoration: none;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 1em 2em;
+    font-weight: 0;
+    font-size: 13px;
+    color: var(--cor-terciaria); 
+    background-color: var(--cor-de-fundo-terceario);  
+}
+
+
+
+
+@media(min-width: 720px) {
+    .about{
+        padding: 3em 3em;
+    }
+    .about-foto{
+        border-radius: 10px;          
+        border: 1px solid var(--cor-terciaria); 
+        width: 400px;
+    }    
+    .about__botao{
+        margin: 0;
+    }   
+}
+
+
+
+@media(min-width: 1440px) {
+    
+    .about{
+        padding: 5% 15% 10% 15%;
+    }
+    .about__topo{
+        margin: 0;
+    }
+    .about__block{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 3em;
+    }
+    .about__titulo-destaque{
+            color: var(--cor-terciaria);
+            font-size: 20px;
+        }    
+    .about-foto{
+        width: 400px;
+        max-width:500px;
+        flex-grow: 1;
+    }
+} 

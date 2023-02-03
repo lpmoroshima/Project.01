@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<!--CABECALHO--> 
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html"><span class="link-destaque">1.</span>Home</a>
+            <a class="cabecalho__menu__link" href="about.html"><span class="link-destaque">2.</span>About</a>
+            <a class="cabecalho__menu__link" href="experience.html"><span class="link-destaque">3.</span>Experience</a>
+            <a class="cabecalho__menu__link" href="work.html"><span class="link-destaque">4.</span>Work</a> 
+            <a class="cabecalho__menu__link" href="contact.html"><span class="link-destaque">5.</span>Contact</a>  
+            <a class="cabecalho__menu__botao" href="resume.html">Resume</a> 
+        </nav>
+
+        <div class="retract">
+            <div class="retract-container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="retract__menu"></span>
+                </label>
+                <ul class="lista-menu">                    
+                    <li class="lista-menu__item">
+                        <a href="index.html" class="lista-menu__link">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="about.html" class="lista-menu__link">About</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="experience.html" class="lista-menu__link">Experience</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="work.html" class="lista-menu__link">Work</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="contact.html" class="lista-menu__link">Contact</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="resume.html" class="lista-menu__link lista-menu__botao" >Resume</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    
+    <!--PROJECTS--> 
+
+    <section class="projects">
+        <div class="projects__primeira-coluna">
+            <div class="projects__topo">
+                <h1 class="projects__titulo">Main Projects</h1>
+                <div class="projects-destaques__barra"></div>
+            </div>
+        </div>
+        <div class="projects__cards">            
+
+            <!--CARD Nº1--> 
+
+            <div class="cards_template">
+                <h1 class="cards_template-titulo">Featured Project</h1>
+                <h2 class="cards_template-subtitulo">NFT Minting Platform</h2>
+                <p class="cards_template-texto">Candy Digital is one of the largest NFT collectible out there nowadays. I’ve workedon the design and implementation of their minting
+                    service, done mostly on NodeJS Typescript, EtherJS, PostgreSQL and Prisma</p>
+                <ul class="cards__template-lista">
+                    <li class="lista-programas">VSCode</li>
+                    <li class="lista-programas">Typescript</li>
+                    <li class="lista-programas">NextJS</li>
+                    <li class="lista-programas">ReactJS</li>
+                    <li class="lista-programas">Html5</li>
+                    <li class="lista-programas">CSS3</li>
+                    <li class="lista-programas">NodeJS</li>
+                    <li class="lista-programas">PostgreSQL</li>
+                    <li class="lista-programas">Prisma</li>                         
+                </ul>
+                <div class="projects__botoes">
+                    <a class="projects__botoes-link" href="https://github.com">
+                        <img src="./assets/github.svg" width="20px">
+                    </a>
+                    <a class="projects__botoes-link" href="https://candy.com">
+                        <img src="./assets/link.png" width="20px">
+                    </a>                
+                </div>
+            </div> 
+
+            <!--CARD Nº2--> 
+
+            <div class="cards_template">
+                <h1 class="cards_template-titulo">Featured Project</h1>
+                <h2 class="cards_template-subtitulo">Tradebay Co.</h2>
+                <p class="cards_template-texto">TradeBay is a global marketplace where producers, sellers, buyers and traders instantly grow their 
+                    network of trusted partners, reach new markets, and trade more securely. The App is written in NextJS and Typescript, using
+                    PostgreSQL, GraphQl and Hasura.</p>
+                <ul class="cards__template-lista">
+                    <li class="lista-programas">VSCode</li>
+                    <li class="lista-programas">Typescript</li>
+                    <li class="lista-programas">NextJS</li>
+                    <li class="lista-programas">ReactJS</li>
+                    <li class="lista-programas">Html5</li>
+                    <li class="lista-programas">CSS3</li>                    
+                </ul>
+                <div class="projects__botoes">
+                    <a class="projects__botoes-link" href="https://github.com">
+                        <img src="./assets/github.svg" width="20px">
+                    </a>
+                    <a class="projects__botoes-link" href="https://candy.com">
+                        <img src="./assets/link.png" width="20px">
+                    </a>                
+                </div>
+            </div> 
+
+            <!--CARD Nº3--> 
+
+            <div class="cards_template">
+                <h1 class="cards_template-titulo">Featured Project</h1>
+                <h2 class="cards_template-subtitulo">SOUCBMDF</h2>
+                <p class="cards_template-texto">All-in-one app for CBMDF firefighters to use, with features and resources going from
+                    internal news and memos to shift reminders and digital ID cards.</p>
+                <ul class="cards__template-lista">
+                    <li class="lista-programas">ReactJS</li>
+                    <li class="lista-programas">Material-UI</li>
+                    <li class="lista-programas">PrimeFaces</li>
+                    <li class="lista-programas">ReactNative</li>
+                    <li class="lista-programas">Html5</li>
+                    <li class="lista-programas">CSS3</li>
+                    <li class="lista-programas">NodeJS</li>   
+                    <li class="lista-programas">GraphQl</li>
+                    <li class="lista-programas">PostgreSQL</li>                 
+                </ul>
+                <div class="projects__botoes">
+                    <a class="projects__botoes-link" href="https://github.com">
+                        <img src="./assets/github.svg" width="20px">
+                    </a>
+                    <a class="projects__botoes-link" href="https://candy.com">
+                        <img src="./assets/link.png" width="20px">
+                    </a>                
+                </div>
+            </div> 
+
+            <!--CARD Nº4--> 
+
+            <div class="cards_template">
+                <h1 class="cards_template-titulo">Featured Project</h1>
+                <h2 class="cards_template-subtitulo">ATENA</h2>
+                <p class="cards_template-texto">Web-app design to keep track of CBMDF courses, agendas, student records and grades.</p>
+                <ul class="cards__template-lista">
+                    <li class="lista-programas">Phyton/PyQT</li>       
+                </ul>
+                <div class="projects__botoes">
+                    <a class="projects__botoes-link" href="https://github.com">
+                        <img src="./assets/github.svg" width="20px">
+                    </a>
+                    <a class="projects__botoes-link" href="https://candy.com">
+                        <img src="./assets/link.png" width="20px">
+                    </a>                
+                </div>
+            </div> 
+        
+            <!--CARD Nº5--> 
+
+            <div class="cards_template">
+                <h1 class="cards_template-titulo">Featured Project</h1>
+                <h2 class="cards_template-subtitulo">CBMDF COVID TRACKER</h2> 
+                <p class="cards_template-texto">Single page application implemented to keep track of COVID inside CBMDF.</p>
+                <ul class="cards__template-lista">
+                    <li class="lista-programas">ReactJS</li>
+                    <li class="lista-programas">Material-UI</li>
+                    <li class="lista-programas">PrimeFaces</li>
+                    <li class="lista-programas">ReactNative</li>
+                    <li class="lista-programas">Html5</li>
+                    <li class="lista-programas">CSS3</li>
+                    <li class="lista-programas">NodeJS</li>   
+                    <li class="lista-programas">GraphQl</li>
+                    <li class="lista-programas">PostgreSQL</li>                 
+                </ul>
+                <div class="projects__botoes">
+                    <a class="projects__botoes-link" href="https://github.com">
+                        <img src="./assets/github.svg" width="20px">
+                    </a>
+                    <a class="projects__botoes-link" href="https://candy.com">
+                        <img src="./assets/link.png" width="20px">
+                    </a>                
+                </div>
+            </div>
+            
+            <!--CARD Nº6--> 
+
+            <div class="cards_template">
+                <h1 class="cards_template-titulo">Featured Project</h1>
+                <h2 class="cards_template-subtitulo">CBMDF DISPATCH DASHBOARD-</h2> 
+                <p class="cards_template-texto">Single page application to report real-time incident alerts and fire station available resources.</p>
+                <ul class="cards__template-lista">
+                    <li class="lista-programas">ReactJS</li>
+                    <li class="lista-programas">Material-UI</li>
+                    <li class="lista-programas">PrimeFaces</li>
+                    <li class="lista-programas">ReactNative</li>
+                    <li class="lista-programas">Html5</li>
+                    <li class="lista-programas">CSS3</li>
+                    <li class="lista-programas">NodeJS</li>   
+                    <li class="lista-programas">GraphQl</li>
+                    <li class="lista-programas">PostgreSQL</li>                 
+                </ul>
+                <div class="projects__botoes">
+                    <a class="projects__botoes-link" href="https://github.com">
+                        <img src="./assets/github.svg" width="20px">
+                    </a>
+                    <a class="projects__botoes-link" href="https://candy.com">
+                        <img src="./assets/link.png" width="20px">
+                    </a>                
+                </div>
+            </div>            
+        </div>
+    </section>
+    
+    <!--RODAPE-->  
+    
+    <footer class="rodape">
+        <div class="rodape__links">         
+            <a class="rodape__links__link" href="https://github.com">
+                <img src="./assets/github.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://linkedin.com/in">
+                <img src="./assets/linkedin.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://twitch.tv">
+                <img src="./assets/twitter.svg" width= "20px">
+            </a>            
+        </div>            
+        <p class="rodape__texto">Designed & Built by @lpmoroshima.</p>
+    </footer>
+</body>
+
+</html>

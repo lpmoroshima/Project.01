@@ -1,0 +1,117 @@
+.data-details{
+    background: var(--cor-de-fundo-secundario);
+    border-radius: 5px;
+    padding: 4em 1.5em;
+    margin-top: 5em;
+}
+.details-titulo{
+    font-size: 20px;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    color: var(--cor-secundaria);
+    padding-bottom: 1.5em;
+}
+.data{    
+    display: flex;
+    flex-direction: column;
+    gap: 3em;    
+    font-family: var(--fonte-terciaria);
+    font-weight: 300;
+    color: var(--cor-terciaria);
+    font-size: 14px;
+    line-height: 1.5;    
+}
+.data__linkedin, .data__github{
+    text-decoration: none;
+    color: var(--cor-tercearia);
+}
+.education__titulo, .comunication__titulo{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    padding-bottom: 0.5em;
+}
+.education__ano, .education__local{
+    border-left: 2px solid var(--cor-terciaria);
+    padding-left: 1em;
+}
+.comunication__language{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-left: 2px solid var(--cor-terciaria);
+    padding-left: 1em;
+}
+.progress-bar, .progress-bar-fluent{
+    height: 8px;
+    padding: 1px;
+    background-color: var(--cor-quaternaria);
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 5px;
+    display: flex;
+    width: auto;
+}
+.progress-bar::before{
+    content: "";
+    width: 70%;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+}
+.progress-bar-fluent::before{
+    content: "";
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+}
+
+
+
+@media(min-width: 720px) {
+    .details-titulo{
+        color: var(--cor-secundaria);
+        padding-bottom: 0;
+    }
+    .data{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "data__descricao data__descricao "
+        "education comunication";
+    }
+    .data__descricao{
+        grid-area: data__descricao;
+    }
+    .education{
+        grid-area: education;
+    }
+    .comunication{
+        grid-area: comunication;
+    }
+    .comunication__language{
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        align-items: center;
+    }    
+}
+
+@media(min-width: 1440px) {
+    .data{
+        padding:2% 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .education__titulo{
+        padding-right: 2em;
+    }
+    .comunication{
+        width: 250px;
+    }
+    .comunication__language{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        align-items: center;
+    }    
+}

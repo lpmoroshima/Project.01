@@ -1,0 +1,31 @@
+/*NETWORKS*/
+.rodape{
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5em 0 1em 0;
+}
+.rodape-links{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.rodape__links__link{
+    margin: 1em;
+    text-decoration:none;
+}
+.rodape__links__link:hover{
+    background-color: var(--cor-hover);
+}
+.rodape__texto{
+    font-family: var(--fonte-terciaria);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--cor-primaria);
+    margin: 1em 0;
+    text-align: center;
+}

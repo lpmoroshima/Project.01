@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<!--CABECALHO--> 
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html"><span class="link-destaque">1.</span>Home</a>
+            <a class="cabecalho__menu__link" href="about.html"><span class="link-destaque">2.</span>About</a>
+            <a class="cabecalho__menu__link" href="experience.html"><span class="link-destaque">3.</span>Experience</a>
+            <a class="cabecalho__menu__link" href="work.html"><span class="link-destaque">4.</span>Work</a> 
+            <a class="cabecalho__menu__link" href="contact.html"><span class="link-destaque">5.</span>Contact</a>  
+            <a class="cabecalho__menu__botao" href="resume.html">Resume</a> 
+        </nav>
+
+        <div class="retract">
+            <div class="retract-container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="retract__menu"></span>
+                </label>
+                <ul class="lista-menu">                    
+                    <li class="lista-menu__item">
+                        <a href="index.html" class="lista-menu__link">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="about.html" class="lista-menu__link">About</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="experience.html" class="lista-menu__link">Experience</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="work.html" class="lista-menu__link">Work</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="contact.html" class="lista-menu__link">Contact</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="resume.html" class="lista-menu__link lista-menu__botao" >Resume</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+
+    
+
+<!--contact-->
+    <section class="contact">
+        <div class="contact__topo">            
+            <h1 class="contact__titulo">What's Next?</h1>
+            <h2 class="contact__subtitulo">Get In Touch</h2>
+            <p class="contact__texto">My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        </div>
+    </section>
+
+    <div class="content">
+        <form>
+            <div id="name">
+                <h2 class="name">First Name and Last Name<span class="destaque">*</span></h2>
+                <div class="bloco">
+                    <div class="name_column">
+                        <label class="text">First Name</label>
+                        <input class="input-padrao" type="text" name="first-name">                    
+                    </div>
+                    <div class="name_column">
+                        <label class="text">Last Name</label>
+                        <input class="input-padrao" type="text" name="last-name">                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="name_column">
+                <h2 class="name">Email address<span class="destaque">*</span></h2>
+                <input class="input-padrao" type="text" name="email">
+            </div>
+
+            <div id="card">
+                <h2 class="name">Phone w/DDD</h2>
+                <div class="bloco-phone">
+                    <div class="name_column">
+                        <label class="text">DDD</label>
+                        <input class="input-padrao" type="text" name="area-code">                    
+                    </div>
+                    <div class="name_column">
+                        <label class="text">Phone</label>
+                        <input class="input-padrao" type="text" name="phone">                    
+                    </div>
+                </div>
+            </div>
+
+            <div id="card">
+                <h2 class="name">How do you identify yourself?<span class="destaque">*</span></h2>
+                <select class="options" name="option">
+                    <option disabled="disabled" selected="select">-- Select Option</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>Trangender</option>
+                    <option>Gender Variant/Non-Confirming</option>
+                    <option>Prefer Not to Answer</option>
+                </select>
+            </div>
+
+            <div class="name_column">
+                <label class="name" for="mensage">Mensage<span class="destaque">*</span></label>
+				<textarea rows="10" id="mensage" class="input-padrao" required></textarea>
+            </div>
+
+            <button class="button__submit" type="submit"> Submit </button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--rodape-->  
+    
+    <footer class="rodape">
+        <div class="rodape__links">         
+            <a class="rodape__links__link" href="https://github.com">
+                <img src="./assets/github.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://linkedin.com/in">
+                <img src="./assets/linkedin.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://twitch.tv">
+                <img src="./assets/twitter.svg" width= "20px">
+            </a>            
+        </div>            
+        <p class="rodape__texto">Designed & Built by @lpmoroshima.</p>
+    </footer>
+</body>
+
+</html>

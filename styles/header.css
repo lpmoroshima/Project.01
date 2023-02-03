@@ -1,0 +1,105 @@
+    .retract {
+        background-color: var(--branco);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 1.5em;
+    }
+    .retract__menu {
+        width: 24px;
+        height: 24px;
+        background-image: url("../assets/menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    .lista-menu{
+        display: flex;
+    }
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 99%;
+        width: 100%;
+        left: 0;
+        height: 900px;
+        background-color: var(--cor-de-fundo-secundario);
+        text-align: center;
+        padding-top: 50%;
+        z-index: 1;    
+    }
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+    .lista-menu__link{
+        text-decoration: none;
+        font-family: var(--fonte-terciaria);
+        color: var(--cor-terciaria);
+        font-weight: 400;    
+    }
+    .lista-menu__item{
+        margin-bottom: 3em;
+    }
+    .cabecalho__menu{
+        display: none;
+    }
+    .container__botao{
+        display: none;
+    }
+    .lista-menu__botao{
+        color: var(--cor-terciaria);
+        font-weight: 400;
+        border: 1px solid var(--cor-terciaria);
+        border-radius: 5px;
+        background: none;
+        padding: 0.5em 3em;
+    }
+
+@media(min-width: 720px) {
+    .retract{
+        padding: 2em 3em;
+    }
+}
+
+@media(min-width: 1440px) {
+    .cabecalho{
+        padding: 2%;
+    }
+    .retract{
+        display: none;
+    }
+    .cabecalho__menu{
+        display: flex;
+        gap: 40px;        
+        justify-content: end;
+        align-items: center;
+    }
+    .cabecalho__menu__link, .cabecalho__menu__botao, .link-destaque{
+        font-family: var(--fonte-terciaria);
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--cor-primaria);
+        text-decoration: none;
+    }
+    .cabecalho__menu__botao{
+        color: var(--cor-terciaria);
+        font-weight: 400;
+        border: 1px solid var(--cor-terciaria);
+        border-radius: 5px;
+        background: none;
+        padding: 0.5em 2em;
+    }
+    .link-destaque{
+        color: var(--cor-terciaria);
+    }
+    .cabecalho__menu__botao:hover{
+        transform: scale(1.02);
+        transition-delay: 100ms;
+        background: var(--cor-terciaria);
+        color: var(--cor-de-fundo);
+    }
+    .cabecalho__menu__link:hover{
+        color: var(--cor-terciaria);
+    } 
+}

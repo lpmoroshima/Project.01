@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<!--CABECALHO--> 
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html"><span class="link-destaque">1.</span>Home</a>
+            <a class="cabecalho__menu__link" href="about.html"><span class="link-destaque">2.</span>About</a>
+            <a class="cabecalho__menu__link" href="experience.html"><span class="link-destaque">3.</span>Experience</a>
+            <a class="cabecalho__menu__link" href="work.html"><span class="link-destaque">4.</span>Work</a> 
+            <a class="cabecalho__menu__link" href="contact.html"><span class="link-destaque">5.</span>Contact</a>  
+            <a class="cabecalho__menu__botao" href="resume.html">Resume</a> 
+        </nav>
+
+        <div class="retract">
+            <div class="retract-container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="retract__menu"></span>
+                </label>
+                <ul class="lista-menu">                    
+                    <li class="lista-menu__item">
+                        <a href="index.html" class="lista-menu__link">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="about.html" class="lista-menu__link">About</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="experience.html" class="lista-menu__link">Experience</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="work.html" class="lista-menu__link">Work</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="contact.html" class="lista-menu__link">Contact</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="resume.html" class="lista-menu__link lista-menu__botao" >Resume</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <!--INTERNETIONAL EXPERIENCE-->
+
+        <section class="international">
+            <div class="international__topo">
+                <h1 class="international__titulo">International experience</h1>
+                <div class="international-destaques__barra"></div>
+            </div>
+            <section class="cards">
+                <div class="international__card">
+                    <h1 class="card__ano">2015</h1>
+                    <p class="card__texto">Presenting one of my biomedical engineering projects at the Massachussets
+                        Institute of Technology (MIT) at the MIT Media Culture Lab.</p>
+                    <p class="international__local">Boston - United States</p>
+                </div>
+                <div class="international__card">
+                    <h1 class="card__ano">2013</h1>
+                    <p class="card__texto">One year exchange program having studied Electrical and Electronic
+                        Engineering at Coventry University - UK.</p>
+                    <p class="international__local">Coventry - United Kingdom</p>    
+                </div>
+            </section>
+        </section>   
+
+
+    <!--WORK-->
+
+    <section class="work">
+        <div class="work__primeira-coluna">
+            <div class="work__topo">
+                <h1 class="work__titulo">Where I've Worked</h1>
+                <div class="work-destaques__barra"></div>
+            </div>
+        </div>
+        <div class="work__block">
+            <div class="work__local">
+                <button type="button" class="local" id="local">Holonic Inc.</button>
+                <button type="button" class="local">Tradebay Co.</button>
+                <button type="button" class="local">CBMDF</button>
+                <button type="button" class="local">UNB</button>
+            </div>  
+            <div class="work__descicao">
+                <h2 class="descricao-titulo">Full-stack Software Engineer</h2>
+                <p class="descricao-texto">Working as a Full-stack Software Engineer using
+                    Typescript, NEXT.JS, ReactJS, HTML5, CSS3 on
+                    the Frontend and NodeJS, Typescript, PostgreSQL,
+                    Prisma, and other technologies, focused on developing
+                    solutions for Web3 applications.</p>
+                <p class="descicao-date">May/2021<br>Feb/2022</p>
+            </div>
+        </div>     
+    </section>
+
+    <!--SKILLSET--> 
+
+    <section class="skillset">
+        <div class="skillset__primeira-coluna">
+            <div class="skillset__topo">
+                <h1 class="skillset__titulo">Skillset</h1>
+                <div class="skillset-destaques__barra"></div>
+            </div>
+        </div>
+        <section class="cards">
+            <div class="skillset__cards">
+                <h1 class="skillset__subtitulo">Frontend</h1>
+                <ul class="skillset__lista">
+                    <li class="lista-link">HTML, CSS, Javascript, Typescript</li>
+                    <li class="lista-link">React JS, NextJS, React Native</li>
+                    <li class="lista-link">Tailwind CSS, SASS, Styled Components</li>
+                    <li class="lista-link">Figma</li>
+                </ul>
+            </div>
+            <div class="skillset__cards">
+                <h1 class="skillset__subtitulo">Backend</h1>
+                <ul class="skillset__lista">
+                    <li class="lista-link">NodeJS, Express, Fastify, NestJS</li>
+                    <li class="lista-link">PostgreSQL, MongoDB, FaunaDB</li>
+                    <li class="lista-link">GraphQl, Hasura, Twirp, tRPC, RESTful APIs</li>
+                </ul>
+            </div>
+            <div class="skillset__cards">
+                <h1 class="skillset__subtitulo">Testing Frameworks</h1>
+                <ul class="skillset__lista">
+                    <li class="lista-link">Jest, Cypress</li>
+                </ul>
+            </div>
+        </section>                      
+    </section>
+
+
+    <!--PROFESSIONAL DEVELOPMENT--> 
+
+    <section class="develop">
+        <div class="develop__primeira-coluna">
+            <div class="develop__topo">
+                <h1 class="develop__titulo">Professional Development</h1>
+                <div class="develop-destaques__barra"></div>
+            </div>
+        </div>
+        <div class="develop__cards">
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2022</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">GraphQL with React: The Complete Developers Guide</p>
+                    <p class="develop__cards-local">Web Development Course - Udemy - Stephen Grider</p>
+                </div>
+            </div>
+
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2021</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">Ignite - Front-End Development Course with ReactJS, Typescript and NextJS</p>
+                    <p class="develop__cards-local">Web development Couse - RocketSeat</p>
+                </div>
+            </div>
+
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2021</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">Next Level Week - 1 Week Course w/ Next and Typescript</p>
+                    <p class="develop__cards-local">Web development Bootcamp - RocketSeat</p>
+                </div>
+            </div>
+
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2021</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">Learn Figma - UI/UX Design Essential Training</p>
+                    <p class="develop__cards-local">UI/UX DESIGN - Udemy - Caleb Kingston</p>
+                </div>
+            </div>
+
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2020</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">Node with React: Fullstack Web Development</p>
+                    <p class="develop__cards-local">Web development Bootcamp - Udemy - Stephen Grider</p>
+                </div>
+            </div>
+
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2020</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">Docker and Kubernetes: The Complete Guide</p>
+                    <p class="develop__cards-local">Web development Course - Udemy - Stephen Grider</p>
+                </div>
+            </div>
+
+            <div class="develop__cards-template">
+                <div class="develop__cards-ano">
+                    <h1 class="ano">2019</h1>
+                </div>
+                <div class="develop__cards-text">
+                    <p class="develop__cards-curso">Modern React with Redux</p>
+                    <p class="develop__cards-local">Web development Course - Udemy - Stephen Grider</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+    <!--RODAPE-->  
+    
+    <footer class="rodape">
+        <div class="rodape__links">         
+            <a class="rodape__links__link" href="https://github.com">
+                <img src="./assets/github.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://linkedin.com/in">
+                <img src="./assets/linkedin.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://twitch.tv">
+                <img src="./assets/twitter.svg" width= "20px">
+            </a>            
+        </div>            
+        <p class="rodape__texto">Designed & Built by @lpmoroshima.</p>
+    </footer>
+</body>
+
+</html>

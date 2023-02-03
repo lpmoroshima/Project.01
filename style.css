@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('styles/header.css');
+@import url("styles/presentation.css");
+@import url("styles/about.css");
+@import url("styles/work.css");
+@import url("styles/projects.css");
+@import url("styles/skillset.css");
+@import url("styles/contact.css");
+@import url("styles/footer.css");
+/*about*/
+@import url("styles/data.css");
+/*experience*/
+@import url("styles/international.css");
+@import url("styles/develop.css");
+/*contact*/
+@import url("styles/form.css");
+
+
+:root {
+    --cor-de-fundo: #181D31;
+    --cor-de-fundo-secundario: #222944;
+    --cor-de-fundo-terceario: #293937;
+    --cor-primaria: #a9aeb8;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #8ce0d1;
+    --cor-quaternaria: #414141;
+    --cor-hover: #828282;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Roboto Mono', monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+    font-size: 16px;
+}
+

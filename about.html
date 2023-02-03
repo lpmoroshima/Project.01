@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+<!--CABECALHO--> 
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html"><span class="link-destaque">1.</span>Home</a>
+            <a class="cabecalho__menu__link" href="about.html"><span class="link-destaque">2.</span>About</a>
+            <a class="cabecalho__menu__link" href="experience.html"><span class="link-destaque">3.</span>Experience</a>
+            <a class="cabecalho__menu__link" href="work.html"><span class="link-destaque">4.</span>Work</a> 
+            <a class="cabecalho__menu__link" href="contact.html"><span class="link-destaque">5.</span>Contact</a>  
+            <a class="cabecalho__menu__botao" href="resume.html">Resume</a> 
+        </nav>
+
+        <div class="retract">
+            <div class="retract-container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="retract__menu"></span>
+                </label>
+                <ul class="lista-menu">                    
+                    <li class="lista-menu__item">
+                        <a href="index.html" class="lista-menu__link">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="about.html" class="lista-menu__link">About</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="experience.html" class="lista-menu__link">Experience</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="work.html" class="lista-menu__link">Work</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="contact.html" class="lista-menu__link">Contact</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="resume.html" class="lista-menu__link lista-menu__botao" >Resume</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+
+    <!--PROFILE--> 
+
+    <main class="data-details">
+        <section class="details">
+            <h1 class="details-titulo">Profile</h1>
+        </section>
+
+        <section class="data">
+            <section class="data__descricao">
+                <p class="data_adress">Brasilia - DF, Brazil</p>
+                <p class="data__phone">+55 (61) 99406 - 1818</p>
+                <p class="data__email">matiaspedro25@gmail.com</p>            
+                <a class="data__linkedin" href="https://www.linkedin.com/in/pedro-matias-52b69259/">LinkedIn Profile</a>
+                <br>
+                <a class="data__github" href="https://github.com/Pedro-M-Santos">GitHub Profile</a>
+            </section>  
+            <section class="education">
+                <h1 class="education__titulo">Education</h1>
+                <div class="education__blocos">
+                    <p class="education__ano">2009 - 2015</p>
+                    <p class="education__local">Electronic Engineering <br>Bachelor of science<br>University of Braslia - Braslia, Brazil</p>
+                </div>
+            </section>   
+            <section class="comunication">
+                <h1 class="comunication__titulo">Comunication Skills</h1>
+                <div class="comunication__blocos">                
+                    <div class="comunication__language"> 
+                        <p class="language">Portuguese</p>
+                        <p class="progress-bar-fluent"></p> 
+                    </div> 
+                    <div class="comunication__language"> 
+                        <p class="language">English</p>
+                        <p class="progress-bar-fluent"></p> 
+                    </div>
+                    <div class="comunication__language"> 
+                        <p class="language">French</p>
+                        <p class="progress-bar"></p> 
+                    </div> 
+                    <div class="comunication__language"> 
+                        <p class="language">Spanish</p>
+                        <p class="progress-bar"></p> 
+                    </div> 
+                </div>               
+            </section>
+        </section>   
+    </main>
+
+
+    <!--ABOUT-->     
+
+    <section class="about">
+        <div class="about__topo">
+            <h1 class="about__titulo">About Me</h1>
+            <div class="destaques__barra"></div>
+        </div>
+        <div class="about__block">
+            <div class="about__primeira-coluna">            
+                <p class="about__texto">Hello! My name is Matias and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p> 
+                <p class="about__texto">Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
+                <p class="about__texto">I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React. Here are a few technologies I’ve been working with recently:</p>
+                <ul class="about__programas">
+                    <li class="about__programas-lista">JavaScript (ES6+)</li>
+                    <li class="about__programas-lista">React</li>
+                    <li class="about__programas-lista">Node.js</li>
+                    <li class="about__programas-lista">TypeScript</li>
+                    <li class="about__programas-lista">Eleventy</li>
+                    <li class="about__programas-lista">WordPress</li>
+                </ul>
+            </div>        
+            <div class="about__segunda-coluna">
+                <img src="./assets/avatar.jpg" alt="Foto do Pedro" class="about-foto">
+            </div>  
+        </div>    
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape__links">         
+            <a class="rodape__links__link" href="https://github.com">
+                <img src="./assets/github.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://linkedin.com/in">
+                <img src="./assets/linkedin.svg" width="20px">
+            </a>
+            <a class="rodape__links__link" href="https://twitch.tv">
+                <img src="./assets/twitter.svg" width= "20px">
+            </a>            
+        </div>            
+        <p class="rodape__texto">Designed & Built by @lpmoroshima.</p>
+    </footer>
+</body>
+
+</html>
